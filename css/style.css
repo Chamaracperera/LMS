@@ -450,6 +450,90 @@ tbody tr:hover {
   cursor: pointer;
 }
 
+
+
+/*member registration interface*/
+.container2{
+  max-width: 700px;
+  width: 200%;
+  justify-content: center;
+  background-color:rgb(255,255,255,0.7);
+  padding: 25px 30px;
+  border-radius: 5px;
+  position: inherit;
+  top: 70px;
+  margin-left:auto ;
+  margin-right: auto;
+}
+
+.container2 .title2{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container2 .title2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+.container2 form.user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-details .input-box{
+  margin: 20px 0 12px 0;
+  width: calc(200% 12-20px);
+
+}
+.user-details .input-box .d1 .d2 .d3 .d4 .d5{
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 200px;;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+form .button input{
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #a00b0b;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg,#71b7e6,#9b59b6);
+
+
+}
+form .button input:hover{
+  background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+/*end of member registration*/
+
+
+
 /* Media Queries */
 @media (max-width: 768px) {
   .nav_logo {

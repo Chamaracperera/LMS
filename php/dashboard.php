@@ -6,8 +6,8 @@ include_once 'header.php';
         <ul class="nav_items">
         <li class="nav_item">
             <a href="#" class="nav_link">Home</a>                                               
-            <a href="#" class="nav_link">Member Registration</a>
-            <a href="#" class="nav_link">Member Management</a>
+            <a href="signup_mem.php" class="nav_link">Member Registration</a>
+            <a href="display_member.php" class="nav_link">Member Management</a>
             <p class="my_account">
               <i class="uil uil-user" style="color: #fff;"></i>
               <span style="color: #fff;"><?php echo htmlspecialchars($_SESSION['user_name']); ?></span>

@@ -1,5 +1,11 @@
 <?php
-include_once 'db.php';
+session_start();
+include 'db.php';
+
+if (!isset($_SESSION['user_name'])) {
+    header("Location:../index.html");
+    exit;
+}
 
 if (isset($_GET['id'])) {
     $member_id = $_GET['id']; 

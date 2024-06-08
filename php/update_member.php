@@ -20,6 +20,7 @@ function isMemberIDUnique($conn, $member_id) {
     return ($row['count'] == 0);
 }
 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['member_id'])) {
     // Retrieve form data
     $member_id = $_POST['member_id'];
@@ -42,14 +43,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['member_id'])) {
         header('Location:display_member.php?stat=Member_id_already_exists');
         exit();
     }
-
+    
     // Update user record in the database
     $stmt = $conn->prepare("UPDATE member SET member_id=?, first_name=?, last_name=?, birthday=?, email=? WHERE member_id=?");
     $stmt->bind_param("ssssss", $new_member_id, $first_name, $last_name, $birthday, $email, $member_id);
     $stmt->execute();
     $stmt->close();
 
-    header('Location:display_member.php?stat=Updated_successfully');
+    header('Location:display_member.php?stat=Updated_member_successfully');
     exit();
 }
 
@@ -85,7 +86,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
     <main class="table" data-aos="zoom-in">
         <div class="header_container">
             <h1 class="header_title">Library Members</h1>
-            <button class="button2 add_member_button" onclick="window.location.href='#'">Add New Member</button>
+            <button class="button2 add_member_button" onclick="window.location.href='display_member.php'">View Member List</button>
+            <button class="button2 add_member_button" onclick="window.location.href='signup_mem.php'">Add New Member</button>
         </div>
         <section class="table_body">
             <form id="editForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

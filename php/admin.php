@@ -8,6 +8,7 @@ $result = $conn->query("SELECT * FROM user");
 
         <ul class="nav_items">
           <li class="nav_item">
+            <a href="#" class="nav_link">Home</a> 
             <button class="button2" id="logoutBtn">Logout</button>
           </li>
         </ul>
@@ -15,9 +16,10 @@ $result = $conn->query("SELECT * FROM user");
     </header>
   <main class="body1">
     <main class="table" data-aos="zoom-in">        
-        <section class="table_header">
-          <h1>User List</h1>
-        </section>
+    <div class="header_container">
+      <h1 class="header_title">User List</h1>
+      <button class="button2 add_member_button" onclick="window.location.href='add_user.php'">Add New User</button>
+    </div>
         <section class="table_body">
           <table>
               <thead>

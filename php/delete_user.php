@@ -19,9 +19,9 @@ if (isset($_GET['id'])) {
         echo "Error: " . $stmt->error;
     }
     $stmt->close();
-}
+}arlet
 ?>
-<script src="../js/arlet.js"></script>
+<script src="../js/alert.js"></script>
 <?php
 $conn->close();
 ?>

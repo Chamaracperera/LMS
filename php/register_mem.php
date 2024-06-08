@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location:signup_mem.php?error=stmtfailed");
+        header("Location:signup_mem.php?stat=stmtfailed");
         exit();
     }
 
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultData = mysqli_stmt_get_result($stmt);
     if ($row = mysqli_fetch_assoc($resultData)) {
         mysqli_stmt_close($stmt);
-        header("Location:signup_mem.php?error=Already_Exists");
+        header("Location:signup_mem.php?stat=Email_Exists");
         exit();
     }
     mysqli_stmt_close($stmt);
@@ -41,14 +41,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO member (member_id, first_name, last_name, birthday, email) VALUES (?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location:signup_mem.php?error=stmtfailed");
+        header("Location:signup_mem.php?stat=stmtfailed");
         exit();
     }
     mysqli_stmt_bind_param($stmt, "sssss", $member_id, $first_name, $last_name, $birthday, $email);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
-    header("Location:signup_mem.php?status=registration_successful");
+    header("Location:signup_mem.php?stat=registration_successful");
     exit();
 } else {
     header('Location:signup_mem.php');

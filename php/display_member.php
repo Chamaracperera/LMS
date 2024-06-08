@@ -48,7 +48,7 @@ $result = $conn->query("SELECT * FROM member");
             <td><?php echo htmlspecialchars($member['birthday']); ?></td>
             <td><?php echo htmlspecialchars($member['email']); ?></td>
             <td>
-            <a href="update_member.php?id=<?php echo $member['member_id']; ?>">Update</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="update_member.php?id=<?php echo $member['member_id']; ?>">Edit</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="delete_member.php?id=<?php echo $member['member_id']; ?>" onclick="return confirm('Are you sure?')">Delete</a>
             </td>
           </tr>

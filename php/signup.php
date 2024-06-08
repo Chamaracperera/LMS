@@ -14,7 +14,7 @@ if (isset($_POST["submit"])) {
     $invalidUserId = invalidUserId($userid);
     $invalidUsername = invalidUsername($user_name);
     $invalidEmail = invalidEmail($email);
-    $invalidpwd = invalidpwd($pwd);             // TODO add
+    $invalidpwd = invalidpwd($pwd);             
     $userExists = usernameExists($conn, $user_name, $email, $userid);
     
 

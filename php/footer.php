@@ -7,7 +7,7 @@
       window.location.href = "logout.php";
     });
   </script>
-  <script src="../js/arlet.js"></script>
+  <script src="../js/alert.js"></script>
   <script>
         AOS.init();
   </script>

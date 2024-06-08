@@ -29,7 +29,7 @@ include_once 'header.php';
             <input class="input3" type="text" placeholder="Enter book name" name="book_name" id="book-name" required>
             <br>
             <label for="book-category"><b>Book Category:</b></label>
-            <select name="book_category" id="book-category" required>
+            <select class="select3" name="book_category" id="book-category" required>
                 <option value="">Select Category</option>
                 <?php
                 require 'db.php';

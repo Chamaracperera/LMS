@@ -44,7 +44,7 @@ a {
  
 }
 .container{
-  position: relative;
+  position: fixed;
   margin-top:15px;
   height: 100px;
   width: 75%;
@@ -153,22 +153,27 @@ tbody tr:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-}
-.rounded-input {
+}                                             /* TO ADD*/
+.rounded-input,
+.rounded-input1 {
   border: 2px solid #ccc;
   border-radius: 10px; 
   padding: 10px;
   width: 200px;
   height: 25px;
   transition: border-color 0.3s ease;
+}                                             
+.rounded-input1 {
+  height: 35px;
 }
 
-.rounded-input:focus {
+.rounded-input:focus,
+.rounded-input1 {
   outline: none;
   border-color: #007bff; 
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
-
+                                               /* TO ADD*/
 
 .ul{
   list-style: none;
@@ -425,104 +430,9 @@ tbody tr:hover {
   margin-top: 15px;
 }
 
-/*start of avindi*/
-.container3 {
-  position: fixed;
-  margin-top: 40px;
-  top: 10%;
-  margin-left: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 82vw;
-  height: 75vh;
-  background: #fff1;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 .4rem .8rem #0005;
-  border-radius: .8rem;
-  overflow: hidden;
-}
-.form3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  margin-bottom: 6px;
-  color: goldenrod;
-  text-align: center;
-  width: 100%;
-}
-.input3, select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
-
-.button3 {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.button3:hover {
-  background-color: #45A049;
-}
-
-#book-list {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#book-list th, #book-list td {
-  padding: 8px;
-  text-align: left;
-  border: 1px solid #ccc;
-}
-/*end of avindi*/
 
 
-/*Table Header of Add New Member*/
-.header_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 1rem;
-  background-color: #fff4;
-  margin-bottom: 0.8rem; 
-}
-
-.header_title {
-  color: #fff;
-  font-size: 20px;
-}
-
-.add_member_button {
-  padding: 6px 12px;
-  font-size: 12px;
-  border: 3px solid #fff;
-  background: transparent;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
-
-/*member registration interface*/
+/*start of chanuli*/
 .container2{
   max-width: 700px;
   width: 200%;
@@ -600,7 +510,103 @@ form .button input{
 form .button input:hover{
   background: linear-gradient(135deg,#71b7e6,#9b59b6);
 }
-/*end of member registration*/
+/*end of chanuli*/
+
+/*start of sarani*/
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 1rem;
+  background-color: #fff4;
+  margin-bottom: 0.8rem; 
+}
+
+.header_title {
+  color: #fff;
+  font-size: 20px;
+}
+
+.add_member_button {
+  padding: 6px 12px;
+  font-size: 12px;
+  border: 3px solid #fff;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*end of sarani*/
+
+/*start of avindi*/
+.container3 {
+  position: fixed;
+  margin-top: 40px;
+  top: 10%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 82vw;
+  height: 75vh;
+  background: #fff1;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 .4rem .8rem #0005;
+  border-radius: .8rem;
+  overflow: hidden;
+}
+.form3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: goldenrod;
+  text-align: center;
+  width: 100%;
+}
+.input3, .select3 {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.button3 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button3:hover {
+  background-color: #45A049;
+}
+
+#book-list {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#book-list th, #book-list td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+/*end of avindi*/
+
 /*start of chamathya*/
 .rounded-select {
   border: 2px;
@@ -618,7 +624,6 @@ form .button input:hover{
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
 }
 /*end of chamathya*/
-
 
 /* Media Queries */
 @media (max-width: 768px) {

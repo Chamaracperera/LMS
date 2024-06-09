@@ -22,37 +22,33 @@ include_once 'header.php';
 <body>
 
    
-<div class="form4">
+<div style="text-align: center" class="form4">
     <form action="update_borrow_details.php" method="POST">
         <h1 class="heading4"> Borrow books</h1>
         <div class="input-box4">
           <label class="label4">Borrow ID</label>
           <input type="text" name="borrowid" id="borrowid" class="input-box4" placeholder="Enter the Borrow ID eg:BRxxx" required>
-          <br><br>
 
           <label class="label4">Book ID</label>
           <input type="text" name="bookid" id="bookid" class="input-box4" placeholder="Enter the Book ID eg:BXXX" required>
-          <br><br>
 
           <label class="label4">Member ID</label>
           <input type="text" name="memberid" id="memberid" class="input-box4" placeholder="Enter the Member ID eg:MXXX" required>
-          <br><br>  
         
           <label class="label4">Borrow Status</label>
-            <div class="container4">
+            <div style="text-align: center" class="container4">
               <select name="borrow-status" class="borrow-status" id="borrow-status">
               <option value="Borrowed" selected="selected">Borrowed</option>
               <option value="Available">Available</option>
               </select>
             </div>
           </div>
-          <br>
 
           <div class="date2">
           <label class="label4">Modified Date</label> 
           <input type="date" name="currentDate" id="currentDate" class="input-box4" required>
           </div>
-          <br><br>
+          <br>
         
           <div class="borrowBtn">
           <button type="submit" id="borrowButton">Borrow Book</button>

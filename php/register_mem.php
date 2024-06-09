@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $resultData = mysqli_stmt_get_result($stmt);
     if ($row = mysqli_fetch_assoc($resultData)) {
         mysqli_stmt_close($stmt);
-        header("Location:signup_mem.php?stat=Email_Exists");
+        header("Location:signup_mem.php?stat=Email_or_member_id_Exists");
         exit();
     }
     mysqli_stmt_close($stmt);

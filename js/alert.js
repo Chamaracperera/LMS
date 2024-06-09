@@ -173,6 +173,9 @@ if (stat) {
         case 'Borrow_ID_Already_Exists':
             title = 'Borrow ID Already Exists';
             break;
+        case 'Email_or_member_id_Exists':
+            title = 'Email Or Member Id Exists';
+            break;
         default:none
             
         

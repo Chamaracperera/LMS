@@ -80,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
     <main class="table" data-aos="zoom-in">
         <div class="header_container">
             <h1 class="header_title">Book Details</h1>
-            <button class="button2 add_member_button" onclick="window.location.href='display_book.php'">View Member List</button>
             <button class="button2 add_member_button" onclick="window.location.href='book_form.php'">Add New Book</button>
         </div>
         <section class="table_body">

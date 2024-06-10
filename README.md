@@ -41,7 +41,7 @@
     </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#collaboration">Collaboration</a></li>
+    <li><a href="#collaborations">Collaborations</a></li>
   </ol>
 </details>
 
@@ -123,7 +123,7 @@ Resources used and credits:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- COLLABORATION -->
-## Collaboration
+## Collaborations
 
 This project is made possible through the collaboration of the following team members:
 

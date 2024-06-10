@@ -57,6 +57,7 @@ The Library Management System is a comprehensive web-based software solution des
 This section lists the major frameworks/libraries used to bootstrap the project.
 
 * [![HTML][html-badge]][html-url]
+* [![CSS][css-badge]][css-url]
 * [![JavaScript][js-badge]][js-url]
 * [![PHP][PHP.com]][PHP-url]
 * [![MySQL][MySQL.com]][MySQL-url]
@@ -152,3 +153,5 @@ This project is made possible through the collaboration of the following team me
 [html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [js-badge]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[css-badge]: https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[css-url]: https://www.w3schools.com/css/

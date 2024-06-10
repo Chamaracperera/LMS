@@ -104,7 +104,7 @@ _Below are the steps to set up the project._
 <!-- CONTACT -->
 ## Contact
 
-Chamara Perera - [@twitter](https://www.linkedin.com/in/chamara-perera-b832762b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
+Chamara Perera - [@twitter](https://www.linkedin.com/in/chamara-perera-b832762b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) [@email](wchamaraask@gmail.com)
 
 Project Link: [https://github.com/Chamaracperera/LMS.git](https://github.com/Chamaracperera/LMS.git)
 
